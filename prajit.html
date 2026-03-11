@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Domain Website</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f7fb;
+}
+
+header{
+background:#1e88e5;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.tabs{
+display:flex;
+background:#1565c0;
+}
+
+.tabs button{
+flex:1;
+padding:14px;
+border:none;
+background:#1565c0;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+.tabs button:hover{
+background:#0d47a1;
+}
+
+.tabcontent{
+display:none;
+padding:30px;
+background:white;
+}
+
+.active{
+display:block;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#1e88e5;
+color:white;
+margin-top:20px;
+}
+</style>
+
+<script>
+function openTab(tabName){
+var i;
+var x = document.getElementsByClassName("tabcontent");
+
+for(i=0;i<x.length;i++){
+x[i].style.display="none";
+}
+
+document.getElementById(tabName).style.display="block";
+}
+
+window.onload=function(){
+document.getElementById("home").style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>☁️ My Cloud Website</h1>
+<p>Hosted on a Cloud Domain</p>
+</header>
+
+<div class="tabs">
+<button onclick="openTab('home')">Home</button>
+<button onclick="openTab('services')">Cloud Services</button>
+<button onclick="openTab('pricing')">Pricing</button>
+<button onclick="openTab('contact')">Contact</button>
+</div>
+
+<div id="home" class="tabcontent">
+<h2>Welcome</h2>
+<p>This website runs on a cloud domain. Cloud hosting allows scalable, secure, and fast websites.</p>
+
+<ul>
+<li>High availability</li>
+<li>Global CDN</li>
+<li>Secure infrastructure</li>
+<li>Fast loading</li>
+</ul>
+</div>
+
+<div id="services" class="tabcontent">
+<h2>Cloud Services</h2>
+<p>We provide multiple cloud solutions:</p>
+
+<ul>
+<li>Cloud Website Hosting</li>
+<li>Cloud Storage</li>
+<li>Domain Management</li>
+<li>Backup & Security</li>
+</ul>
+</div>
+
+<div id="pricing" class="tabcontent">
+<h2>Pricing</h2>
+
+<table border="1" cellpadding="10">
+<tr>
+<th>Plan</th>
+<th>Storage</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Starter</td>
+<td>10GB</td>
+<td>$5/month</td>
+</tr>
+
+<tr>
+<td>Business</td>
+<td>100GB</td>
+<td>$15/month</td>
+</tr>
+
+<tr>
+<td>Enterprise</td>
+<td>Unlimited</td>
+<td>$30/month</td>
+</tr>
+
+</table>
+
+</div>
+
+<div id="contact" class="tabcontent">
+<h2>Contact Us</h2>
+
+<p>Email: support@mycloudsite.com</p>
+<p>Phone: +91 00000 00000</p>
+
+<form>
+<input type="text" placeholder="Your Name" required><br><br>
+<input type="email" placeholder="Your Email" required><br><br>
+<textarea placeholder="Your Message"></textarea><br><br>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+
+<footer>
+<p>© 2026 My Cloud Website | Cloud Domain Hosting</p>
+</footer>
+
+</body>
+</html>
